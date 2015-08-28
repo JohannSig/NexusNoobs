@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 11, 2015, 1:10:15 PM
+    Author     : Jóhann Sigurðsson
+*/
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body {
+    //padding-top: 60px;    
+    background: transparent url('http://nexus.is/vefverslun/themes/ecommerce-prestashopic/css/../img/bg.png') repeat-x left 174px;
+    /*
+    background-image: url(../images/avengers.png);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: black;    
+    */
+}
+
+a { color: #f7d246; }
+
+#header {
+    background: transparent url('http://nexus.is/vefverslun/themes/ecommerce-prestashopic/css/../img/header_top.png') repeat-x center top;
+    width: 100%;
+    height: 189px;
+
+    .container {
+        background: transparent url('http://nexus.is/vefverslun/themes/ecommerce-prestashopic/css/../img/header_mid.png') center bottom no-repeat;
+        height: 129px;
+    }
+}
+
+.page-top { 
+    clear: both;
+    height: 10px;
+    margin: 0 auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: white;
+}
+
+.page-content {
+    margin: 0 auto;
+    padding: 10px;
+    background: white;
+    box-shadow: 1px 10px 15px -4px rgba(0,0,0,0.5);
+}
+
+#jumbo {
+    min-height: 300px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.column {
+
+    padding: 20px;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px black;
+    
+    h3 {
+        color: #f7d246;
+    }
+    
+    .header {
+        font-size: 36px;
+        > small {
+            font-size: 28px;
+        }
+        font-family: 'Tahoma';
+        text-transform: uppercase;
+        color: white;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    
+    li {
+        color: white;
+    }
+    
+    &.red {
+        background-color: #930a00;
+        p { color: white; }
+    }
+
+    &.blue {
+        background-color: blue;
+        color: white;        
+        p { color: white; }
+    }
+
+    &.white {
+        background-color: white;
+    }        
+}
+
+#footer {
+    width: 100%;
+    text-align: left;
+    clear: both;
+    height: 220px;
+    background: url('http://nexus.is/vefverslun/themes/ecommerce-prestashopic/css/../img/footer_bg.png') repeat-x scroll left top transparent;
+}
